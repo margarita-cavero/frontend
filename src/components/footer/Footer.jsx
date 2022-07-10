@@ -2,6 +2,8 @@
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+      <p>Created by <a href="https://daniel-espanadero.com/" target='_BLANK'>Daniel Españadero</a> © {new Date().getFullYear()}</p>
+    </>
   )
 }

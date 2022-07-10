@@ -5,6 +5,10 @@
   user-select: none;
 }
 
+body {
+  background-color: #cd9b81;
+}
+
 @font-face {
   font-family: 'Srisakdi-Bold';
   src: url('../assets/fonts/Srisakdi/Srisakdi-Bold.ttf');

@@ -5,6 +5,7 @@ import { Contact } from "../components/contact/Contact";
 import { Demos } from "../components/demos/Demos";
 import { Home } from "../components/home/Home";
 import { Works } from "../components/works/Works";
+import { Footer } from "../components/footer/Footer";
 
 
 
@@ -20,6 +21,7 @@ export const DashboardRoutes = () => {
                     <Route path='contacto' element={<Contact />} />
                 </Routes>
             </div>
+            <Footer />
         </Router>
     )
 }

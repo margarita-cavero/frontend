@@ -1,10 +1,14 @@
+import { HomeStyled } from "./HomeStyled"
+import { TypewriterInicio } from "./Typewriter"
 
 
 export const Home = () => {
     return (
-        <>
-            <div>Home</div>
-            {/* <img src="../../assets/images/margaritaCavero1.webp" alt="Margarita Cavero" /> */}
-        </>
+        <HomeStyled>
+            <div className="margarita-img">
+                <TypewriterInicio />
+            </div>
+            <div className="prueba">Home</div>
+        </HomeStyled>
     )
 }
