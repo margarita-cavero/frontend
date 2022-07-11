@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const TypewriterStyled = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    color: #f00;
+    font-size:5rem;
+    font-family: 'Typewriter-Bold';
+    color: #ffffff;
+    text-shadow:2px 2px 1px #a42f42;
 `

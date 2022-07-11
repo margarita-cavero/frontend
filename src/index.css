@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   user-select: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,4 +18,9 @@ body {
 @font-face {
   font-family: 'Roboto-regular';
   src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Typewriter-Bold';
+  src: url('../assets/fonts/jmh_typewriter/Typewriter-Bold.ttf');
 }

@@ -1,4 +1,6 @@
+import { AboutMe } from "./AboutMe"
 import { HomeStyled } from "./HomeStyled"
+import { OpenImage } from "./OpenImage"
 import { TypewriterInicio } from "./Typewriter"
 
 
@@ -8,7 +10,8 @@ export const Home = () => {
             <div className="margarita-img">
                 <TypewriterInicio />
             </div>
-            <div className="prueba">Home</div>
+            <AboutMe />
+            <OpenImage />
         </HomeStyled>
     )
 }

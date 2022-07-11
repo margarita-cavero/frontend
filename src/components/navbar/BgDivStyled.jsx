@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const BgDiv = styled.div`
-    position: absolute;
-    background-color: #333;
+    position: fixed;
+    background-image: url('../../assets/images/madera-rotada.jpg');
+    background-position: center;
     top:-1000px;
     left: -1000px;
     width: 100%;
     height: 100%;
     z-index: 50;
+    box-shadow: 1px 1px 1px #bb9885;
     transition: all .6s ease;
     &.active{
         width: 100%;

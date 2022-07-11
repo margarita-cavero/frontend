@@ -1,7 +1,7 @@
-
+import { AudioPlayer } from "./AudioPlayer"
 
 export const Demos = () => {
   return (
-    <div>Demos</div>
+    <AudioPlayer />
   )
 }

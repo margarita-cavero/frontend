@@ -6,18 +6,17 @@ background: -webkit-linear-gradient(to right, #400811, #cd9b81);
 background: linear-gradient(to right, #400811, #cd9b81);
 
 .margarita-img{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     top: 10%;
     width: 100vw;
     height: 100vh;
-    background-image: url('../../assets/images/margaritaCavero1.webp');
+    background-image: url('../../assets/images/margaritaCavero3.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    background-attachment: fixed;
-}
-.prueba{
-    height: 200vh;
-    width: 100%;
-    /* background-color: #f00; */
 }
 `
