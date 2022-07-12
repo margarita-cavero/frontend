@@ -1,6 +1,15 @@
+import { useEffect } from "react";
+import { titleCompaniesScrollMagic } from "../../helpers/titleCompaniesScrollMagic";
 import { CompaniesStyled } from "./CompaniesStyled";
 
 export const Companies = () => {
+
+    useEffect(() => {
+        titleCompaniesScrollMagic();
+    }, [])
+    
+
+    
     return (
         <CompaniesStyled>
             <div className="titleContainer">
@@ -29,6 +38,7 @@ export const Companies = () => {
                     <img className="companies" src="../../../assets/images/logos/warner.png" alt="warner" />
                 </div>
             </div>
+            <div className="photo"></div>
         </CompaniesStyled>
     )
 }

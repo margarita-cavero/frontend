@@ -80,7 +80,7 @@ font-family: 'Roboto-regular';
     }
 }
 .presentation{
-    margin: 1rem 20%;
+    margin: 1rem 10%;
     font-size:2rem;
     text-align:justify;
     color: #000;

@@ -6,14 +6,18 @@ margin-top: 2rem;
 .titleContainer{
     width:100%;
     height: 500px;
-    border: 1px solid red;
     .title{
         position: sticky;
-        top: 15%;
-        color: #fff;
-        font-size: 3rem;
+        top: 25%;
+        color: #000;
+        font-size: 4rem;
         text-align: center;
+        margin: 0 8rem;
         padding: 2rem;
+        transition: all 1s;
+    }
+    .show{
+        color: #fff;
     }
 }
 .companiesContainer{
@@ -22,8 +26,7 @@ margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-
-    border: 1px solid red;
+    margin-bottom: 40px;
     .imgsContainer{
         display: flex;
         align-items: center;
@@ -35,5 +38,12 @@ margin-top: 2rem;
             width: 80%;
         }
     }
+}
+.photo{
+    width:100%;
+    height: 60vh;
+    background-image: url('../../../assets/images/margaritaCavero4.webp');
+    background-attachment: fixed;
+    background-position: top;
 }
 `

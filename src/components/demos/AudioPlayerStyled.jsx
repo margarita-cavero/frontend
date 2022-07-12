@@ -4,9 +4,9 @@ export const AudioPlayerStyled = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-align-items: center;
+/* align-items: center; */
 justify-content: space-around;
-height: 1000px;
+height: 100vh;
 background: linear-gradient(#cd9b81 20%, #a42f42 100%);
 .audioPlayer{
     display: flex;

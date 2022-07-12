@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import { AboutMeScrollMagic } from "../../helpers/aboutMeScrollMagic";
+import { aboutMeScrollMagic } from "../../helpers/aboutMeScrollMagic";
 import { AboutMeStyled } from "./AboutMeStyled";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export const AboutMe = () => {
     const f = new Date();
 
     useEffect(() => {
-        AboutMeScrollMagic();
+        aboutMeScrollMagic();
     }, [])
 
     return (

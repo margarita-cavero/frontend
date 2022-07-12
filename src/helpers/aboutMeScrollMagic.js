@@ -1,4 +1,4 @@
-export const AboutMeScrollMagic = () => {
+export const aboutMeScrollMagic = () => {
     const controller = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({
