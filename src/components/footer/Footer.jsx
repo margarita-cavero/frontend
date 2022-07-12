@@ -1,9 +1,14 @@
+import { FooterStyled } from "./FooterStyled"
 
 
 export const Footer = () => {
   return (
-    <>
-      <p>Created by <a href="https://daniel-espanadero.com/" target='_BLANK'>Daniel Españadero</a> © {new Date().getFullYear()}</p>
-    </>
+    <FooterStyled>
+      <div className="microFooter">
+      </div>
+      <div>
+        <p>Created by <a href="https://daniel-espanadero.com/" target='_BLANK'>Daniel Españadero</a> © {new Date().getFullYear()}</p>
+      </div>
+    </FooterStyled>
   )
 }

@@ -83,6 +83,16 @@ font-family: 'Roboto-regular';
     margin: 1rem 20%;
     font-size:2rem;
     text-align:justify;
+    color: #000;
+    text-shadow: 1px 1px 1px #555;
+    line-height: 3rem;
+    .links{
+        color: #aaa;
+        transition: all 1s;
+    }
+    .links:hover{
+        color: #555;
+    }
 }
 @media (min-width: 768px){
 .sticky1{

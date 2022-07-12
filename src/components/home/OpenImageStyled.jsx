@@ -10,8 +10,6 @@ margin-top: 2rem;
     height: 1000px;
     transition: all 3s;
     text-align: center;
-
-    border: 1px solid red;
     .riendo{
         position: sticky;
         margin: auto;
@@ -19,7 +17,6 @@ margin-top: 2rem;
         opacity: 0;
         width: 30%;
         border-radius: 20%;
-
         transition: all 3s;
     }
     .riendo.show{
@@ -29,8 +26,6 @@ margin-top: 2rem;
         width: 100%;
         height: 1px;
         margin-top: 100px;
-
-        border: 1px solid #ff0;
     }
 }
 .riendo.show2{
