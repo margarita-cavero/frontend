@@ -6,6 +6,7 @@ import { Demos } from "../components/demos/Demos";
 import { Home } from "../components/home/Home";
 import { Works } from "../components/works/Works";
 import { Footer } from "../components/footer/Footer";
+import { Error404 } from "../components/error404/Error404";
 
 
 
@@ -19,6 +20,7 @@ export const DashboardRoutes = () => {
                     <Route path='demos' element={<Demos />} />
                     <Route path='trabajos' element={<Works />} />
                     <Route path='contacto' element={<Contact />} />
+                    <Route path='*' element={<Error404 />} />
                 </Routes>
             </div>
             <Footer />

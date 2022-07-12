@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { BgDiv } from "./BgDivStyled";
 import { BurgerButton } from "./BurgerButton";
@@ -12,9 +12,9 @@ export const Navbar = () => {
     const handleClick = () => {
         if(window.innerWidth <= 768){
             return setClicked(!clicked);
-        }
+        };
         return;
-    }
+    };
 
     return (
         <>
