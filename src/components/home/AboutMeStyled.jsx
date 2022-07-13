@@ -87,11 +87,11 @@ font-family: 'Roboto-regular';
     text-shadow: 1px 1px 1px #555;
     line-height: 3rem;
     .links{
-        color: #aaa;
+        color: #555;
         transition: all 1s;
     }
     .links:hover{
-        color: #555;
+        color: #aaa;
     }
 }
 @media (min-width: 768px){

@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const HomeStyled = styled.div`
 background: #cd9b81;
-background: -webkit-linear-gradient(to right, #400811, #cd9b81);
-background: linear-gradient(to right, #400811, #cd9b81);
+/* background: -webkit-linear-gradient(to right, #400811, #cd9b81); */
+/* background: linear-gradient(to right, #400811, #cd9b81); */
+background: -webkit-linear-gradient(-180deg, #400811 0%, #cd9b81 70%);
+background: linear-gradient(-180deg, #400811 0%, #cd9b81 70%);
 
 .margarita-img{
     display: flex;

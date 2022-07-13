@@ -9,15 +9,15 @@ margin-top: 2rem;
     .title{
         position: sticky;
         top: 25%;
-        color: #000;
+        color: #fff;
         font-size: 4rem;
         text-align: center;
         margin: 0 8rem;
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
         transition: all 1s;
     }
     .show{
-        color: #fff;
+        color: #400811;
     }
 }
 .companiesContainer{
