@@ -37,52 +37,68 @@ height: 100%;
             background-color: #905f45aa;
             outline: none;
             border: 0;
+            color: #400811; 
             margin-bottom: 1rem;
             width: 100%;
             height: 2rem;
-            padding: .5rem 1rem;
+            padding: 1rem;
             border-bottom: 2px solid #400811;
+            font-size: 1.2rem;
+        }
+        .input::placeholder { 
+            color: #400811; 
+        }
+        .input:focus{
+            color: #000;
+        }
+        .input:hover{
+            color: #000;
         }
         .textArea{
             resize: none;
-            height: 6rem;
+            height: 8rem;
+            padding: .5rem 1rem;
         }
         .send {
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 5px;
-        border: none;
-        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-        background: #905f45;
-        z-index: 1;
+            min-width: 130px;
+            height: 40px;
+            color: #400811;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            box-shadow:inset 2px 2px 2px 0px #400811, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+            background: #905f45;
+            z-index: 1;
         }
         .send:hover:after {
-        width: 100%;
-        left: 0;
+            width: 100%;
+            left: 0;
         }
         .send:after {
-        border-radius: 5px;
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 100%;
-        top: 0;
-        z-index: -1;
-        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-        transition: all 0.3s ease;
-        background-color: #400811;
-        right: 0;
+            border-radius: 5px;
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            box-shadow:inset 2px 2px 2px 0px #905f45, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+            transition: all 0.3s ease;
+            background-color: #400811;
+            right: 0;
+        }
+        .send:hover{
+            color: #905f45;
         }
         .send:active {
-        top: 2px;
+            top: 2px;
+            color: #905f45;
         }
     }
 }
