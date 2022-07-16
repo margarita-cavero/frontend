@@ -50,6 +50,10 @@ height: 100%;
         .input:focus{
             color: #000;
         }
+        .input::selection{
+            background-color: #400811;
+            color: #a42f42;
+        }
         .input:hover{
             color: #000;
         }
@@ -105,6 +109,12 @@ height: 100%;
             color: #a42f42;
             text-shadow: 1px 1px 1px #000;
         }
+    }
+    .sendMessage{
+        margin-top: .8rem;
+        color: #09b000;
+        text-shadow: 2px 2px 3px #000;
+        font-size: 1.2rem;
     }
 }
 `;
