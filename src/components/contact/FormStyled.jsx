@@ -25,7 +25,6 @@ height: 100%;
     .title{
         font-size: 3rem;
         color: #400811;
-        margin: 2rem 0;
     }
     .form{
         display: flex;
@@ -38,7 +37,7 @@ height: 100%;
             outline: none;
             border: 0;
             color: #400811; 
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             width: 100%;
             height: 2rem;
             padding: 1rem;
@@ -56,7 +55,7 @@ height: 100%;
         }
         .textArea{
             resize: none;
-            height: 8rem;
+            height: 6rem;
             padding: .5rem 1rem;
         }
         .send {
@@ -70,6 +69,7 @@ height: 100%;
             position: relative;
             display: inline-block;
             outline: none;
+            margin-top: 1rem;
             border-radius: 5px;
             border: none;
             box-shadow:inset 2px 2px 2px 0px #400811, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
@@ -99,6 +99,11 @@ height: 100%;
         .send:active {
             top: 2px;
             color: #905f45;
+        }
+        .validation{ 
+            margin-top: 0;
+            color: #a42f42;
+            text-shadow: 1px 1px 1px #000;
         }
     }
 }
