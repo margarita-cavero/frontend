@@ -14,7 +14,7 @@ export const Form = () => {
         }
     });
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         reset({
             firstName: '',
             lastName: '',
@@ -28,7 +28,14 @@ export const Form = () => {
             keepIsValid: false,
             keepSubmitCount: false,
         });
-        console.log(data);
+        await fetch('http://localhost:8080/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
     };
 
     return (
@@ -78,7 +85,7 @@ export const Form = () => {
                         })}
                         placeholder="Email"
                     />
-                    {errors.email?.type === 'pattern' && <p className="validation">El correo electronico no es válido.</p>}
+                    {errors.email?.type === 'pattern' && <p className="validation">Introduce un correo valido.</p>}
                     {errors.email?.type === 'required' && <p className="validation">El correo electronico es obligatorio.</p>}
                     {errors.email?.type === 'maxLength' && <p className="validation">El correo electronico puede tener como máximo 50 caracteres.</p>}
                     <textarea
