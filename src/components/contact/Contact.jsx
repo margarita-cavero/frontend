@@ -5,7 +5,7 @@ import { Form } from "./Form";
 export const Contact = () => {
   return (
     <ContactStyled>
-        <Form />
+      <Form />
     </ContactStyled>
   )
 }

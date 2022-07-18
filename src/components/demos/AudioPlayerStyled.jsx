@@ -4,28 +4,27 @@ export const AudioPlayerStyled = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-/* align-items: center; */
+align-items: center;
 justify-content: space-around;
-height: 100vh;
-background: linear-gradient(#cd9b81 20%, #a42f42 100%);
+padding: 3rem;
 .audioPlayer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 15%;
+    justify-content: center;
     width: 343px;
     height: 200px;
     max-width: 100%;
     background-color: #4a4747bb;
-    padding: 16px;
     border-radius: 16px;
     box-shadow: 0 0 5px #000;
     z-index:1;
+    margin-bottom: 3rem;
     .title{
         color: #0007;
-        font-family: 'Roboto-regular';
+        /* font-family: 'Roboto-regular'; */
         font-size: 2rem;
+        margin-top: -10%;
     }
     .timeBar{
         -webkit-appearance: none;

@@ -26,7 +26,7 @@ export const TypewriterInicio = () => {
                             .typeString('Audiolibros')
                             .pauseFor(2000)
                             .deleteAll()
-                            .typeString('Cantante')
+                            .typeString('Canto')
                             .pauseFor(2000)
                             .deleteAll()
                             .start();

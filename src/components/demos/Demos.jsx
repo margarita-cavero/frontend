@@ -1,7 +1,7 @@
-import { AudioPlayer } from "./AudioPlayer"
+import { Dubbing } from "./dubbing/Dubbing";
 
 export const Demos = () => {
   return (
-    <AudioPlayer />
+    <Dubbing />
   )
 }

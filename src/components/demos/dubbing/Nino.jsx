@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-export const Mujer = () => {
+export const Nino = () => {
 
     const audioPlayer = useRef();
     const [currentTime, setCurrentTime] = useState(0);
@@ -33,15 +33,15 @@ export const Mujer = () => {
     return (
         <div className="audioPlayer">
             <audio
-                src="../../assets/audios/mujer.mp3"
+                src="../../assets/audios/niño.mp3"
                 ref={audioPlayer}
                 onTimeUpdate={onPlaying}
             >
                 Your browser does not support the
                 <code>audio</code> element.
             </audio>
-            <br />
-            <h3 className="title">Mujer</h3>
+            {/* <br /> */}
+            <h3 className="title">Niño</h3>
             {/* <p>{currentTime}</p> */}
             <input
                 className="timeBar"

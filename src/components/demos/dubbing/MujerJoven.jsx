@@ -40,7 +40,7 @@ export const MujerJoven = () => {
                 Your browser does not support the
                 <code>audio</code> element.
             </audio>
-            <br />
+            {/* <br /> */}
             <h3 className="title">Mujer Joven</h3>
             {/* <p>{currentTime}</p> */}
             <input
