@@ -12,7 +12,7 @@ font-family: 'Roboto-regular';
     color: #fff;
     text-shadow: 1px 1px 5px #000;
 }
-.title{
+.titles{
     padding-top: 10%;
     font-size: 4rem;
 }

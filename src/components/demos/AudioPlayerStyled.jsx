@@ -17,14 +17,14 @@ padding: 3rem;
     max-width: 100%;
     background-color: #4a4747bb;
     border-radius: 16px;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #777;
     z-index:1;
     margin-bottom: 3rem;
     .title{
-        color: #0007;
+        color: #eee7;
         /* font-family: 'Roboto-regular'; */
         font-size: 2rem;
-        margin-top: -10%;
+        /* margin-top: -10%; */
     }
     .timeBar{
         -webkit-appearance: none;

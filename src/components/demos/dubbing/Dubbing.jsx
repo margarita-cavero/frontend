@@ -10,8 +10,8 @@ import { Nino } from "./Nino"
 export const Dubbing = () => {
   return (
     <DubbingStyled>
-      <h1 className="text title">DOBLAJE</h1>
-      <p className="text paragraph">Estos son algunos de los registros que poseo como actriz de doblaje, no dudes en contactar si necesitas más demos &#128578;.</p>
+      <h1 className="text titles">DOBLAJE</h1>
+      <p className="text paragraph">Estos son algunos de los registros que poseo como actriz de doblaje, es un honor para mí mostrar el alma de mis personajes, no dudes en contactar si necesitas más demos. &#128578;</p>
       <AudioPlayerStyled>
         <Adolescente />
         <Mujer />
