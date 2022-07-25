@@ -1,4 +1,5 @@
 import { AboutMe } from "./AboutMe"
+import { Characters } from "./Characters"
 import { Companies } from "./Companies"
 import { HomeStyled } from "./HomeStyled"
 import { OpenImage } from "./OpenImage"
@@ -14,6 +15,7 @@ export const Home = () => {
             <AboutMe />
             <OpenImage />
             <Companies />
+            <Characters />
         </HomeStyled>
     )
 }

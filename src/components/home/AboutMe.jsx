@@ -27,15 +27,15 @@ export const AboutMe = () => {
                 <div className="divs sticky7"></div>
             </div>
             <p className="presentation">
-                Hola, mi nombre es Margarita Cavero y hoy día {f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()} hace {f.getFullYear() - 2010} años que decidí dedicarme al doblaje. Fue un camino duro, ya que es una profesión que requiere de mucha dedicación, horas y esfuerzo.
+                Hola, mi nombre es Margarita Cavero y hoy día {f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()} hace {f.getFullYear() - 2010} años que decidí dedicarme al doblaje. Fue un camino duro, ya que es una profesión exigente.
             </p>
             <br />
             <p className="presentation">
-                Lo primero que hice fue buscarme una buena escuela, por desgracia los cursos de doblaje no suelen ser baratos así que dediqué bastante tiempo en investigar las escuelas con más prestigio que me ofrecieran una buena preparación. A partir de ese momento dediqué un año intensivo no solo en la escula, sino que tambien practicando por mi cuenta en casa. La parte de hecharle horas en casa es un habito que sigo realizando hasta el día de hoy ya que es una buena manera de mantenerse y aprender cosas nuevas.
+                Lo primero que hice fue informarme de que necesitaba estudiar para dedicarme a esto, me formé en interpretación, teatro musical, dicción, técnica vocal, doblaje y locución. A partir de ese momento dediqué varios años a mi formación, tambien practicando por mi cuenta en casa. La parte de hecharle horas en casa y seguir investigando sobre mi voz y como puedo ofrecer cosas diferentes con el asesoramiento de un especialista, es un habito que sigo realizando hasta el día de hoy ya que es una buena manera de mantenerse y aprender cosas nuevas.
             </p>
             <br />
             <p className="presentation">
-                En 2014 decidí mudarme a Barcelona y antes de empezar a darme a conocer quise estar preparada ya que el mundo del doblaje es muy pequeño y no quería malgastar la oportunidad. Invertí en demos profesionales y me trabajé para causar una buena impresión, me sentía preparada.
+                En 2014 decidí mudarme a Barcelona y antes de empezar, invertí en demos profesionales y me trabajé para poder realizar mi trabajo de la mejor manera posible, me sentía preparada.
             </p>
             <br />
             <p className="presentation">

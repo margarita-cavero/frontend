@@ -100,4 +100,8 @@ border-bottom: 2px inset #181818;
         display: none;
     }
 }
-`
+`;
+
+export const NavBarActive = {
+    borderBottom: '2px solid #cd9b81'
+};

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { BgDiv } from "./BgDivStyled";
 import { BurgerButton } from "./BurgerButton";
-import { NavStyled } from "./NavStyled";
+import { NavBarActive, NavStyled } from "./NavStyled";
 
 export const Navbar = () => {
 
@@ -26,34 +26,62 @@ export const Navbar = () => {
                     <h1>Margarita Cavero</h1>
                 </Link>
                 <div className={`links-container ${clicked ? 'active' : ''}`}>
-                    <Link
+                    <NavLink
                         className='links'
                         onClick={handleClick}
                         to='/'
+                        style={
+                            ({ isActive }) => (
+                                isActive
+                                    ? NavBarActive
+                                    : {}
+                            )
+                        }
                     >
                         Inicio
-                    </Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                         className='links'
                         onClick={handleClick}
                         to='/demos'
+                        style={
+                            ({ isActive }) => (
+                                isActive
+                                    ? NavBarActive
+                                    : {}
+                            )
+                        }
                     >
                         Demos
-                    </Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                         className='links'
                         onClick={handleClick}
                         to='/trabajos'
+                        style={
+                            ({ isActive }) => (
+                                isActive
+                                    ? NavBarActive
+                                    : {}
+                            )
+                        }
                     >
                         Trabajos
-                    </Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                         className='links'
                         onClick={handleClick}
                         to='/contacto'
+                        style={
+                            ({ isActive }) => (
+                                isActive
+                                    ? NavBarActive
+                                    : {}
+                            )
+                        }
                     >
                         Contacto
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className="burguer">
                     <BurgerButton clicked={clicked} handleClick={handleClick} />

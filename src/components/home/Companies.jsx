@@ -8,7 +8,6 @@ export const Companies = () => {
         titleCompaniesScrollMagic();
     }, [])
     
-
     
     return (
         <CompaniesStyled>
@@ -35,10 +34,13 @@ export const Companies = () => {
                     <img className="companies" src="../../../assets/images/logos/universal.png" alt="universal" />
                 </div>
                 <div className='imgsContainer'>
+                    <img className="companies" src="../../../assets/images/logos/apple.png" alt="apple" />
+                </div>
+                <div className='imgsContainer'>
                     <img className="companies" src="../../../assets/images/logos/warner.png" alt="warner" />
                 </div>
             </div>
             <div className="photo"></div>
         </CompaniesStyled>
-    )
-}
+    );
+};
