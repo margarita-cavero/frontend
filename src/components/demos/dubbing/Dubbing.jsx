@@ -5,6 +5,7 @@ import { Mujer } from "./Mujer"
 import { MujerJoven } from "./MujerJoven"
 import { Nina } from "./Nina"
 import { Nino } from "./Nino"
+import { NinoPeque } from "./NinoPeque"
 
 
 export const Dubbing = () => {
@@ -18,6 +19,7 @@ export const Dubbing = () => {
         <MujerJoven />
         <Nina />
         <Nino />
+        <NinoPeque />
       </AudioPlayerStyled>
     </DubbingStyled>
   )

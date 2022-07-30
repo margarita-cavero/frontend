@@ -6,7 +6,7 @@ export const Audiobook = () => {
     return (
         <AudiobookStyled>
             <h2 className="titles">AUDIOLIBROS</h2>
-            <p className="text paragraph">Otro ejemplo de mis capacidades sn los audiolibros, relájate y disfruta de esta muestra. &#128519;</p>
+            <p className="text paragraph">Otro ejemplo de mis capacidades son los audiolibros, relájate y disfruta de esta muestra. &#128519;</p>
             <AudioPlayerStyled>
                 <BookAudio />
             </AudioPlayerStyled>
