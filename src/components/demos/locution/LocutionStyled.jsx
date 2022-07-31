@@ -6,6 +6,7 @@ width: 100%;
 background-image: url('../../../../assets/images/demos/wallpaper3.webp');
 background-size:cover;
 /* background-attachment: fixed; */
+background-position: center;
 font-family: 'Roboto-regular';
 border-top: 2px solid #400811;
 border-bottom: 2px solid #400811;
@@ -16,10 +17,18 @@ border-bottom: 2px solid #400811;
 }
 .titles{
     padding-top: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .paragraph{
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .titles{
+        font-size: 4rem;
+    }
+    .paragraph{
+        font-size: 2rem;
+    }
 }
 `

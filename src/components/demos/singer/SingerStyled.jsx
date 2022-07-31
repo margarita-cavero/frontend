@@ -16,10 +16,18 @@ background-position: center;
 }
 .titles{
     padding-top: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .paragraph{
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .titles{
+        font-size: 4rem;
+    }
+    .paragraph{
+        font-size: 2rem;
+    }
 }
 `;

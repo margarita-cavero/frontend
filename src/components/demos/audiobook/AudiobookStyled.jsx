@@ -17,11 +17,19 @@ font-family: 'Roboto-regular';
 }
 .titles{
     padding-top: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 5px #000;
 }
 .paragraph{
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .titles{
+        font-size: 4rem;
+    }
+    .paragraph{
+        font-size: 2rem;
+    }
 }
 `

@@ -6,22 +6,26 @@ flex-flow: row nowrap;
 width: 90%;
 height: 80%;
 background-color: #905f4588;
-margin-top: 5%;
+margin: 20% 0 10% 0;
 font-family: 'Roboto-regular';
 .formParts{
 display: flex;
 flex-direction: column;
 align-items:center;
 justify-content: center;
-width: 50%;
+width: 100%;
     .contactImage{
         width: 40%;
         border-radius: 50%;
         filter: drop-shadow(1px 1px 5px #400811);
     }
 }
+.halfContact{
+    display: none;
+}
 .formContainer{
 height: 100%;
+margin: 50px 0;
     .title{
         font-size: 3rem;
         color: #400811;
@@ -116,5 +120,18 @@ height: 100%;
         text-shadow: 2px 2px 3px #000;
         font-size: 1.2rem;
     }
+}
+@media (min-width: 768px) {
+margin: 0;
+margin-top: 5%;
+.halfContact{
+display: flex;
+}
+.formParts{
+    width: 50%;
+}
+.formContainer{
+    margin: 0;
+}
 }
 `;
