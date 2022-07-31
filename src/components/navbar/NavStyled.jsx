@@ -14,9 +14,9 @@ z-index: 100;
 border-bottom: 2px inset #181818;
 .navbar-brand{
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: .9rem;
     font-family: 'Srisakdi-Bold';
-    padding: 1rem;
+    padding: .5rem;
     background: -webkit-linear-gradient(to right, #a42f42, #cd9b81);
     background: linear-gradient(to right, #a42f42, #bb9885);
     background-clip: text;
@@ -59,15 +59,6 @@ border-bottom: 2px inset #181818;
         -webkit-background-clip: text;
         color: transparent;
     }
-    @media (min-width: 768px) {
-        position: initial;
-        margin: 0;
-        margin-right: 2rem;
-        .links{
-            display: inline-block;
-            font-size: 1.5rem;
-        }
-    }
 }
 .links-container.active{
     display: block;
@@ -96,8 +87,29 @@ border-bottom: 2px inset #181818;
         }
 }
 .burguer{
-    @media(min-width: 768px){
+    @media(min-width: 780px){
         display: none;
+    }
+}
+@media (min-width: 375px) {
+    .navbar-brand{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+@media (min-width: 780px) {
+    .navbar-brand{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .links-container{
+        position: initial;
+        margin: 0;
+        margin-right: 2rem;
+        .links{
+            display: inline-block;
+            font-size: 1.5rem;
+        }
     }
 }
 `;
