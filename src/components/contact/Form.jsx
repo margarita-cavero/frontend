@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { FormStyled } from "./FormStyled";
+import config from '../../config';
 
 
 export const Form = () => {
@@ -28,7 +29,7 @@ export const Form = () => {
             keepIsValid: false,
             keepSubmitCount: false,
         });
-        await fetch('http://localhost:8080/contact', {
+        await fetch(config.urlContactPost, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

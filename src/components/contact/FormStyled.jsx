@@ -122,16 +122,16 @@ margin: 50px 0;
     }
 }
 @media (min-width: 768px) {
-margin: 0;
-margin-top: 5%;
-.halfContact{
-display: flex;
-}
-.formParts{
-    width: 50%;
-}
-.formContainer{
     margin: 0;
-}
+    margin-top: 5%;
+    .halfContact{
+    display: flex;
+    }
+    .formParts{
+        width: 50%;
+    }
+    .formContainer{
+        margin: 0;
+    }
 }
 `;

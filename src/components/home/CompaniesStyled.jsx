@@ -58,6 +58,7 @@ margin-top: 2rem;
     .companiesContainer{
         .imgsContainer{
             width: 20%;
+            margin: 30px;
         }
     }
     .photo{
