@@ -47,4 +47,4 @@ export const AboutMe = () => {
             </p>
         </AboutMeStyled>
     )
-}
+};
