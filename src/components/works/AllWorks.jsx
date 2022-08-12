@@ -10,28 +10,28 @@ export const AllWorks = () => {
   const [allWorks, setAllWorks] = useState([])
 
   const getAllWorks = async () => {
-    const res = await fetch(url);
-    const data = await res.json();
-    setAllWorks(currentList => [...currentList, data.works])
-
-    return data;
+    const works = await fetch(url)
+      .then(response => {return response.json()})
+      .then(works => setAllWorks(works.works))
+      .catch(error => console.log(error))
   };
 
   useEffect(() => {
     getAllWorks()
   }, []);
 
+  console.log(allWorks.forEach(work => work));
+
   return (
     <AllWorksStyled>
-      <Work />
-      {allWorks.forEach((work) => {
-        <Work
-          originalActor={work.originalActor}
-          title={work.title}
-          character={work.character}
-          year={work.year}
-          imageURL={work.imageURL}
-        />
+      {allWorks.forEach(work => {
+        <div className='workContainer'>
+          <h2 className='title'>{work.title}</h2>
+          <img className='image' src={work.imageURL} alt={work.title} />
+          <p className='originalActor'>{work.originalActor}</p>
+          <p className='character'>{work.character}</p>
+          <p className='year'>{work.year}</p>
+        </div>
       })
       }
     </AllWorksStyled>
