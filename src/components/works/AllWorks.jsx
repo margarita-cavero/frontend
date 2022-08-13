@@ -20,18 +20,18 @@ export const AllWorks = () => {
     getAllWorks()
   }, []);
 
-  console.log(allWorks.forEach(work => work));
+  console.log(allWorks.map(work => work));
 
   return (
     <AllWorksStyled>
-      {allWorks.forEach(work => {
-        <div className='workContainer'>
-          <h2 className='title'>{work.title}</h2>
-          <img className='image' src={work.imageURL} alt={work.title} />
-          <p className='originalActor'>{work.originalActor}</p>
-          <p className='character'>{work.character}</p>
-          <p className='year'>{work.year}</p>
-        </div>
+      {allWorks.map(work => {
+        <Work 
+          originalActor={work.originalActor} 
+          title={work.title} 
+          character={work.character} 
+          year={work.year} 
+          imageURL={work.imageURL}
+        />
       })
       }
     </AllWorksStyled>
