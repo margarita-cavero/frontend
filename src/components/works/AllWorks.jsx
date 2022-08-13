@@ -20,7 +20,7 @@ export const AllWorks = () => {
     getAllWorks()
   }, []);
 
-  console.log(allWorks.map(work => work));
+  console.log(allWorks.map(work => work.title));
 
   return (
     <AllWorksStyled>
@@ -32,6 +32,16 @@ export const AllWorks = () => {
           year={work.year} 
           imageURL={work.imageURL}
         />
+      })
+      }
+      {allWorks.map(work => {
+        <div className='workContainer'>
+          <h2 className='title'>{work.title}</h2>
+          <img className='image' src={work.imageURL} alt={work.title} />
+          <p className='originalActor'>{work.originalActor}</p>
+          <p className='character'>{work.character}</p>
+          <p className='year'>{work.year}</p>
+        </div>
       })
       }
     </AllWorksStyled>
