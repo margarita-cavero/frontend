@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const WorkStyled = styled.div`
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
+font-family: 'Roboto-regular';
+width: 100%;
 .workContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align:center;
     position: relative;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(98,54,0,1) 30%, rgba(186,121,55,1) 100%);
     top: 10%;
-    width: 20%;
-    height: 340px;
-    font-family: 'Roboto-regular';
+    /* width: 35%; */
+    /* height: 380px; */
     border-radius: 1rem;
+    padding: 20px 0;
     min-width: 220px;
     margin: 1rem;
     box-shadow:
@@ -39,5 +39,6 @@ justify-content: space-evenly;
 .image{
     width: 60%;
     margin: .5rem;
+    padding: 20px 0;
 }
 `;

@@ -1,7 +1,8 @@
-import React from 'react'
 
 export const Auth = () => {
   return (
-    <div>Auth</div>
+    <>
+      <h1>Hola mundo</h1>
+    </>
   )
 }

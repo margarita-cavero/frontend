@@ -1,5 +1,6 @@
 import { DashboardRoutes } from "./routers/DashboardRoutes";
 import { Sugar } from 'react-preloaders';
+import { BackofficeRoutes } from "./routers/BackofficeRoutes";
 
 export const App = () => {
   return (

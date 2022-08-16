@@ -8,6 +8,8 @@ import { AllWorks } from "../components/works/AllWorks";
 import { Footer } from "../components/footer/Footer";
 import { Error404 } from "../components/error404/Error404";
 import { ScrollToTop } from "../components/ScrollToTop";
+import { Auth } from "../components/auth/Auth";
+// import { BackofficeRoutes } from "./BackofficeRoutes";
 
 
 
@@ -22,6 +24,7 @@ export const DashboardRoutes = () => {
                         <Route path='demos' element={<Demos />} />
                         <Route path='trabajos' element={<AllWorks />} />
                         <Route path='contacto' element={<Contact />} />
+                        {/* <Route path='admin' element={<BackofficeRoutes />} /> */}
                         <Route path='*' element={<Error404 />} />
                     </Routes>
                 </div>

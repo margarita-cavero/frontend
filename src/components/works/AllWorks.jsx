@@ -20,30 +20,20 @@ export const AllWorks = () => {
     getAllWorks()
   }, []);
 
-  console.log(allWorks.map(work => work.title));
-
+  
   return (
     <AllWorksStyled>
-      {allWorks.map(work => {
-        <Work 
-          originalActor={work.originalActor} 
-          title={work.title} 
-          character={work.character} 
-          year={work.year} 
+
+      {allWorks.map((work, index) => {
+        return <Work
+          title={work.title}
           imageURL={work.imageURL}
-        />
-      })
-      }
-      {allWorks.map(work => {
-        <div className='workContainer'>
-          <h2 className='title'>{work.title}</h2>
-          <img className='image' src={work.imageURL} alt={work.title} />
-          <p className='originalActor'>{work.originalActor}</p>
-          <p className='character'>{work.character}</p>
-          <p className='year'>{work.year}</p>
-        </div>
-      })
-      }
+          originalActor={work.originalActor}
+          character={work.character}
+          year={work.year}
+          key={index} />
+      })}    
+
     </AllWorksStyled>
   )
 };
