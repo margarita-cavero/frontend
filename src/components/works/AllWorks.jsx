@@ -3,7 +3,6 @@ import { AllWorksStyled } from "./AllWorksStyled";
 import config from "../../config";
 import { Work } from "./Work";
 
-
 export const AllWorks = () => {
   const url = config.urlWorks;
 
@@ -11,7 +10,7 @@ export const AllWorks = () => {
 
   const getAllWorks = async () => {
     const works = await fetch(url)
-      .then(response => {return response.json()})
+      .then(response => { return response.json() })
       .then(works => setAllWorks(works.works.reverse()))
       .catch(error => console.log(error))
   };
@@ -23,18 +22,20 @@ export const AllWorks = () => {
 
   return (
     <AllWorksStyled>
-
-      {allWorks.map((work, index) => {
-        return <Work
-          id={work._id}
-          title={work.title}
-          imageURL={work.imageURL}
-          originalActor={work.originalActor}
-          character={work.character}
-          year={work.year}
-          key={index} />
-      })}    
-
+      <h1 className="mainTitle mainText">TRABAJOS</h1>
+      <p className="paragraph mainText">Aquí te muestro la mayoría de los trabajos que he realizado a lo largo de mi carrera como actriz de doblaje.</p>
+      <div className="worksContainer">
+        {allWorks.map((work, index) => {
+          return <Work
+            id={work._id}
+            title={work.title}
+            imageURL={work.imageURL}
+            originalActor={work.originalActor}
+            character={work.character}
+            year={work.year}
+            key={index} />
+        })}
+      </div>
     </AllWorksStyled>
   )
 };
