@@ -1,16 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { WorkStyled } from './WorkStyled'
 
-export const Work = ({ originalActor, title, character, year, imageURL }) => {
+export const Work = ({id, originalActor, title, character, year, imageURL }) => {
   return (
     <WorkStyled>
-      <div className='workContainer'>
-        <h2 className='title'>{title}</h2>
-        <img className='image' src={imageURL} alt={title} />
-        <p className='originalActor'>Actor Original: {originalActor}</p>
-        <p className='character'>Personaje: {character}</p>
-        <p className='year'>Año: {year}</p>
-      </div>
+      <Link className='workContainer' to={`${id}`}>
+          <div>
+            <h2 className='title'>{title}</h2>
+            <img className='image' src={imageURL} alt={title} />
+          <p className='text'><span className='textInside'>Actor Original: </span>{originalActor}</p>
+          <p className='text'><span className='textInside'>Personaje: </span>{character}</p>
+          <p className='text'><span className='textInside'>Año: </span>{year}</p>
+        </div>
+      </Link>
     </WorkStyled>
   )
 }

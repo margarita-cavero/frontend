@@ -9,6 +9,7 @@ import { Footer } from "../components/footer/Footer";
 import { Error404 } from "../components/error404/Error404";
 import { ScrollToTop } from "../components/ScrollToTop";
 import { Auth } from "../components/auth/Auth";
+import { WorksScreen } from "../components/worksScreen/WorksScreen";
 // import { BackofficeRoutes } from "./BackofficeRoutes";
 
 
@@ -23,6 +24,7 @@ export const DashboardRoutes = () => {
                         <Route path='/' element={<Home />} />
                         <Route path='demos' element={<Demos />} />
                         <Route path='trabajos' element={<AllWorks />} />
+                        <Route path='trabajos/:trabajosId' element={<WorksScreen />} />
                         <Route path='contacto' element={<Contact />} />
                         {/* <Route path='admin' element={<BackofficeRoutes />} /> */}
                         <Route path='*' element={<Error404 />} />

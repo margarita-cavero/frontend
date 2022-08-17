@@ -12,7 +12,7 @@ export const AllWorks = () => {
   const getAllWorks = async () => {
     const works = await fetch(url)
       .then(response => {return response.json()})
-      .then(works => setAllWorks(works.works))
+      .then(works => setAllWorks(works.works.reverse()))
       .catch(error => console.log(error))
   };
 
@@ -20,12 +20,13 @@ export const AllWorks = () => {
     getAllWorks()
   }, []);
 
-  
+
   return (
     <AllWorksStyled>
 
       {allWorks.map((work, index) => {
         return <Work
+          id={work._id}
           title={work.title}
           imageURL={work.imageURL}
           originalActor={work.originalActor}
