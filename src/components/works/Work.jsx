@@ -5,7 +5,7 @@ import { WorkStyled } from './WorkStyled'
 export const Work = ({id, originalActor, title, character, year, imageURL }) => {
   return (
     <WorkStyled>
-      <Link className='workContainer' to={`${id}`}>
+      <div className='workContainer'>
           <div>
             <h2 className='title'>{title}</h2>
             <img className='image' src={imageURL} alt={title} />
@@ -13,7 +13,7 @@ export const Work = ({id, originalActor, title, character, year, imageURL }) => 
           <p className='text'><span className='textInside'>Personaje: </span>{character}</p>
           <p className='text'><span className='textInside'>Año: </span>{year}</p>
         </div>
-      </Link>
+      </div>
     </WorkStyled>
   )
 }

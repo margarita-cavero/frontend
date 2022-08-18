@@ -2,7 +2,7 @@
 export const Auth = () => {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <h1>Hola mundogfdgdfgdf</h1>
     </>
   )
 }

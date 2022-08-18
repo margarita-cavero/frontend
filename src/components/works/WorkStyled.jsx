@@ -4,7 +4,7 @@ export const WorkStyled = styled.div`
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
-width: 25%;
+width: 300px;
 font-family: 'Roboto-regular';
 .workContainer{
     display: flex;

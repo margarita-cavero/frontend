@@ -8,9 +8,9 @@ background-size: cover;
 font-family: 'Roboto-regular';
 min-height: 100vh;
 .mainTitle{
-    padding-top: 10%;
+    padding-top: 25%;
     color: rgba(186,121,55,1);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .paragraph{
     color: #f5e1ce;
@@ -28,5 +28,11 @@ min-height: 100vh;
     flex-flow: row wrap;
     width: 100%;
     padding-bottom:4em;
+}
+@media (min-width: 768px){
+.mainTitle{
+    padding-top: 25%;
+    font-size: 4rem;
+}
 }
 `
