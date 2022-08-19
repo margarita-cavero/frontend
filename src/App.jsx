@@ -5,7 +5,6 @@ import { BackofficeRoutes } from "./routers/BackofficeRoutes";
 export const App = () => {
   return (
     <>
-      <BackofficeRoutes />
       <DashboardRoutes />
       <Sugar color={'#400811'} background='#cd9b81' />
     </>

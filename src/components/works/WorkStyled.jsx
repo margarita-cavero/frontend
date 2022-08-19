@@ -38,6 +38,7 @@ font-family: 'Roboto-regular';
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin: 0 5px;
 }
 .image{
     width: 60%;
@@ -47,6 +48,7 @@ font-family: 'Roboto-regular';
     font-size: 1.2rem;
     color: #000;
     font-style: italic;
+    margin: 0 10px;
 }
 .textInside{
     font-weight: bold;

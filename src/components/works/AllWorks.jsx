@@ -4,14 +4,14 @@ import config from "../../config";
 import { Work } from "./Work";
 
 export const AllWorks = () => {
-  const url = config.urlWorks;
+  const url = config.urlAddWork;
 
   const [allWorks, setAllWorks] = useState([])
 
   const getAllWorks = async () => {
     const works = await fetch(url)
       .then(response => { return response.json() })
-      .then(works => setAllWorks(works.works.reverse()))
+      .then(works => setAllWorks(works.works))
       .catch(error => console.log(error))
   };
 

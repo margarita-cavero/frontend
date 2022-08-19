@@ -31,7 +31,7 @@ min-height: 100vh;
 }
 @media (min-width: 768px){
 .mainTitle{
-    padding-top: 25%;
+    padding-top: 10%;
     font-size: 4rem;
 }
 }
