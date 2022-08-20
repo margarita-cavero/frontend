@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
-import { AuthStyled } from "./AuthStyled"
+import { AuthStyled } from "./AuthStyled";
+
+import config from "../../../config";
 
 export const Auth = () => {
 
@@ -23,7 +25,7 @@ export const Auth = () => {
       keepIsValid: false,
       keepSubmitCount: false,
     });
-    await fetch(config.urlContactPost, {
+    await fetch(config.urlLogin, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

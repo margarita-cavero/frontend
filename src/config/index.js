@@ -1,5 +1,6 @@
 
 export default {
-    urlContactPost: 'http://localhost:8080/contact',
-    urlAddWork: 'http://localhost:8080/works'
+    urlContactPost: 'https://margarita-cavero.herokuapp.com/contact',
+    urlAddWork: 'https://margarita-cavero.herokuapp.com/works',
+    urlLogin: 'https://margarita-cavero.herokuapp.com/auth/login'
 };
