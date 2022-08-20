@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { AuthStyled } from "./AuthStyled";
 
@@ -8,14 +9,14 @@ export const Auth = () => {
   const { register, reset, formState: { errors, isSubmitSuccessful }, handleSubmit } = useForm({
     mode: 'onChange',
     defaultValues: {
-      user: '',
+      email: '',
       password: ''
     }
   });
 
   const onSubmit = async (data) => {
     reset({
-      user: '',
+      email: '',
       password: ''
     }, {
       keepErrors: true,
@@ -32,8 +33,28 @@ export const Auth = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then((res) => {
+      localStorage.setItem('token', res.JWTGenerated);
+      window.location.href = '/admin/works/add';
     });
   };
+
+  const validateToken = async () => {
+    const token = localStorage.getItem('token') || '';
+
+    if(token.length < 10){
+      localStorage.removeItem('token');
+    };
+    if (token.length > 10) {
+       return window.location.href = '/admin/works/add';
+    };
+  };
+
+  useEffect(() => {
+    validateToken();
+  }, []);
 
   return (
     <AuthStyled>
@@ -43,21 +64,21 @@ export const Auth = () => {
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           <input 
             className="inputs" 
-            type="text" 
+            type="email" 
             placeholder="Usuario"
-            {...register('user', {
+            {...register('email', {
               required: true,
               pattern: /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/,
               minLength: 3,
               maxLength: 30
             })}
-            name="user"
+            name="email"
             />
 
-          {errors.user?.type === 'pattern' && <p className="validation">Introduce un usuario valido.</p>}
-          {errors.user?.type === 'required' && <p className="validation">El usuario es obligatorio</p>}
-          {errors.user?.type === 'minLength' && <p className="validation">El usuario tiene que tener como mínimo 3 caracteres.</p>}
-          {errors.user?.type === 'maxLength' && <p className="validation">El usuario tiene que tener como máximo 30 caracteres.</p>}
+          {errors.email?.type === 'pattern' && <p className="validation">Introduce un usuario valido.</p>}
+          {errors.email?.type === 'required' && <p className="validation">El usuario es obligatorio</p>}
+          {errors.email?.type === 'minLength' && <p className="validation">El usuario tiene que tener como mínimo 3 caracteres.</p>}
+          {errors.email?.type === 'maxLength' && <p className="validation">El usuario tiene que tener como máximo 30 caracteres.</p>}
 
           <input 
             className="inputs" 

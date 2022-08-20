@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import config from "../../../config";
 import { AddWorkStyled } from './AddWorkStyled'
@@ -14,6 +15,8 @@ export const AddWork = () => {
             imageURL: ''
         }
     });
+
+    const token = localStorage.getItem('token');
 
     const onSubmit = async (data) => {
         reset({
@@ -34,14 +37,46 @@ export const AddWork = () => {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'authorization': token
             },
             body: JSON.stringify(data)
         });
     };
 
+    const validateToken = async () => {
+        const token = localStorage.getItem('token') || '';
+
+        if (token.length < 10) {
+            localStorage.removeItem('token');
+        };
+
+        if (!token || token === undefined || token.length < 10) {
+            window.location.href = '/admin';
+        };
+    };
+
+    useEffect(() => {
+        validateToken();
+    }, []);
+
+    function logOut(e) {
+        e.preventDefault();
+        localStorage.removeItem('token');
+        window.location.href = '/admin';
+    }
+
+
     return (
         <AddWorkStyled>
+            <form onSubmit={logOut}>
+                <button 
+                    className="send"
+                    type="submit"
+                    >
+                    Cerrar sesión
+                </button>
+            </form>
             <div className="formContainer">
                 <h1 className="title">🛠 AÑADIR UN NUEVO TRABAJO 🛠</h1>
                 <form className="form" onSubmit={handleSubmit(onSubmit)}>
@@ -127,4 +162,4 @@ export const AddWork = () => {
             </div>
         </AddWorkStyled>
     )
-}
+};

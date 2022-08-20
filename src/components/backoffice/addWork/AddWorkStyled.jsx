@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AddWorkStyled = styled.div`
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 background-image: url('../../../assets/images/admin/dub.png');
@@ -9,7 +10,7 @@ background-size: cover;
 background-attachment: fixed;
 padding-top: 5%;
 width: 100%;
-height: 100vh;
+min-height: 100vh;
 font-family: 'Roboto-regular';
 .formContainer{
     display: flex;
@@ -18,6 +19,8 @@ font-family: 'Roboto-regular';
     align-items: center;
     width: 90%;
     height: 90%;
+    padding: 2rem 0;
+    margin: 2rem 0;
     background-color: #905f4577;
     box-shadow:
         0 1.6px 1.6px rgba(0, 0, 0, 0.023),
@@ -29,6 +32,7 @@ font-family: 'Roboto-regular';
         0 71px 71px rgba(0, 0, 0, 0.09);
         .title{
             font-size: 3rem;
+            color: #400811;
         }
         .form{
             display: flex;
@@ -58,53 +62,54 @@ font-family: 'Roboto-regular';
             .inputs:hover{
                 color: #000;
             }
-            .send {
-            min-width: 130px;
-            height: 40px;
-            color: #400811;
-            padding: 5px 10px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            display: inline-block;
-            outline: none;
-            margin-top: 2rem;
-            border-radius: 5px;
-            border: none;
-            box-shadow:inset 2px 2px 2px 0px #400811, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-            background: #905f45;
-            z-index: 1;
-        }
-        .send:hover:after {
-            width: 100%;
-            left: 0;
-        }
-        .send:after {
-            border-radius: 5px;
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 100%;
-            top: 0;
-            z-index: -1;
-            box-shadow:inset 2px 2px 2px 0px #905f45, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-            transition: all 0.3s ease;
-            background-color: #400811;
-            right: 0;
-        }
-        .send:hover{
-            color: #905f45;
-        }
-        .send:active {
-            top: 2px;
-            color: #905f45;
-        }
+            
         }
         .validation{ 
             margin-top: 0;
             color: #a42f42;
             text-shadow: 1px 1px 1px #000;
         }
+}
+.send {
+    min-width: 130px;
+    height: 40px;
+    color: #400811;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px #400811, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #905f45;
+    z-index: 1;
+}
+.send:hover:after {
+    width: 100%;
+    left: 0;
+}
+.send:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px #905f45, 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #400811;
+    right: 0;
+}
+.send:hover{
+    color: #905f45;
+}
+.send:active {
+    top: 2px;
+    color: #905f45;
 }
 `
