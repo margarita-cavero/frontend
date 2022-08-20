@@ -51,15 +51,13 @@ export const AddWork = () => {
                         placeholder="Actor Original"
                         {...register('originalActor', {
                             required: true,
-                            minLength: 3,
-                            maxLength: 30
+                            minLength: 2
                         })}
                         name="originalActor"
                     />
 
                     {errors.originalActor?.type === 'required' && <p className="validation">El actor original es obligatorio</p>}
-                    {errors.originalActor?.type === 'minLength' && <p className="validation">El actor original tiene que tener como mínimo 3 caracteres.</p>}
-                    {errors.originalActor?.type === 'maxLength' && <p className="validation">El actor original tiene que tener como máximo 30 caracteres.</p>}
+                    {errors.originalActor?.type === 'minLength' && <p className="validation">El actor original tiene que tener como mínimo 2 caracteres.</p>}
 
                     <input
                         className="inputs"
@@ -68,10 +66,14 @@ export const AddWork = () => {
                         {...register('title', {
                             required: true,
                             minLength: 3,
-                            maxLength: 60
+                            maxLength: 100
                         })}
                         name="title"
                     />
+
+                    {errors.title?.type === 'required' && <p className="validation">El título es obligatorio</p>}
+                    {errors.title?.type === 'minLength' && <p className="validation">El título tiene que tener como mínimo 3 caracteres.</p>}
+                    {errors.title?.type === 'maxLength' && <p className="validation">El título tiene que tener como máximo 100 caracteres.</p>}
 
                     <input
                         className="inputs"
@@ -79,11 +81,13 @@ export const AddWork = () => {
                         placeholder="Personaje"
                         {...register('character', {
                             required: true,
-                            minLength: 3,
-                            maxLength: 30
+                            minLength: 3
                         })}
                         name="character"
                     />
+
+                    {errors.character?.type === 'required' && <p className="validation">El personaje es obligatorio</p>}
+                    {errors.character?.type === 'minLength' && <p className="validation">El personaje tiene que tener como mínimo 3 caracteres.</p>}
 
                     <input
                         className="inputs"
@@ -91,11 +95,15 @@ export const AddWork = () => {
                         placeholder="Año"
                         {...register('year', {
                             required: true,
-                            minLength: 3,
-                            maxLength: 30
+                            minLength: 4,
+                            maxLength: 4
                         })}
                         name="year"
                     />
+
+                    {errors.year?.type === 'required' && <p className="validation">El año es obligatorio</p>}
+                    {errors.year?.type === 'minLength' && <p className="validation">El año tiene que tener 4 caracteres.</p>}
+                    {errors.year?.type === 'maxLength' && <p className="validation">El año tiene que tener 4 caracteres.</p>}
 
                     <input
                         className="inputs"
@@ -106,6 +114,8 @@ export const AddWork = () => {
                         })}
                         name="imageURL"
                     />
+
+                    {errors.imageURL?.type === 'required' && <p className="validation">La imagen es obligatoria</p>}
 
                     <button
                         className="send"
