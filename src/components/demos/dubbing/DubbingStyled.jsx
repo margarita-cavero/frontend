@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DubbingStyled = styled.div`
 width:100%;
 min-height: 100vh;
-background-image: url('../../../../assets/images/demos/wallpaper2.webp');
+background-image: url('../../../../images/demos/wallpaper2.webp');
 background-size:cover;
 background-attachment: fixed;
 background-position: right;

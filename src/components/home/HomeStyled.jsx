@@ -14,7 +14,7 @@ background: linear-gradient(-180deg, #400811 0%, #cd9b81 70%);
     top: 10%;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/images/margaritaCavero3.webp');
+    background-image: url('../../images/margaritaCavero3.webp');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

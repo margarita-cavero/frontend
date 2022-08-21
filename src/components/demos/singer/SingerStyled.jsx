@@ -6,7 +6,7 @@ width: 100%;
 font-family: 'Roboto-regular';
 border-top: 2px solid #400811;
 border-bottom: 2px solid #400811;
-background-image: url('../../../../assets/images/demos/wallpaper1.webp');
+background-image: url('../../../../images/demos/wallpaper1.webp');
 background-size:cover;
 background-position: center;
 .text{

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AllWorksStyled = styled.div`
 /* background: linear-gradient(-180deg, #400811 0%, #cd9b81 70%); */
-background-image: url('../../../assets/images/works/fondo-micro.jpeg');
+background-image: url('../../../images/works/fondo-micro.jpeg');
 background-attachment: fixed;
 background-size: cover;
 font-family: 'Roboto-regular';

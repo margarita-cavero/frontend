@@ -42,7 +42,7 @@ margin-top: 2rem;
 .photo{
     width:100%;
     height: 60vh;
-    background-image: url('../../../assets/images/margaritaCavero4-phone.webp');
+    background-image: url('../../../images/margaritaCavero4-phone.webp');
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -62,7 +62,7 @@ margin-top: 2rem;
         }
     }
     .photo{
-        background-image: url('../../../assets/images/margaritaCavero4.webp');
+        background-image: url('../../../images/margaritaCavero4.webp');
         background-position: top;
     }
 }

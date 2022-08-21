@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LocutionStyled = styled.div`
 min-height: 50vh;
 width: 100%;
-background-image: url('../../../../assets/images/demos/wallpaper3.webp');
+background-image: url('../../../../images/demos/wallpaper3.webp');
 background-size:cover;
 /* background-attachment: fixed; */
 background-position: center;

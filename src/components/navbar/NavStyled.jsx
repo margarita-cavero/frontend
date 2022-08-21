@@ -4,7 +4,7 @@ export const NavStyled = styled.nav`
 position: fixed;
 width: 100%;
 height: 10vh;
-background-image: url('../../assets/images/madera.jpeg');
+background-image: url('../../images/madera.jpeg');
 background-position: center;
 padding: .4rem;
 display: flex;

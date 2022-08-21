@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-image: url('../../../assets/images/admin/dub.png');
+background-image: url('../../../images/admin/dub.png');
 background-size: cover;
 background-attachment: fixed;
 padding-top: 5%;

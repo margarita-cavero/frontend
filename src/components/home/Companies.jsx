@@ -16,28 +16,28 @@ export const Companies = () => {
             </div>
             <div className="companiesContainer">
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/disney.png" alt="disney" />
+                    <img className="companies" src="../../../images/logos/disney.png" alt="disney" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/hbo.png" alt="hbo" />
+                    <img className="companies" src="../../../images/logos/hbo.png" alt="hbo" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/netflix.png" alt="netflix" />
+                    <img className="companies" src="../../../images/logos/netflix.png" alt="netflix" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/sony.png" alt="sony" />
+                    <img className="companies" src="../../../images/logos/sony.png" alt="sony" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/paramount.png" alt="paramount" />
+                    <img className="companies" src="../../../images/logos/paramount.png" alt="paramount" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/universal.png" alt="universal" />
+                    <img className="companies" src="../../../images/logos/universal.png" alt="universal" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/apple.png" alt="apple" />
+                    <img className="companies" src="../../../images/logos/apple.png" alt="apple" />
                 </div>
                 <div className='imgsContainer'>
-                    <img className="companies" src="../../../assets/images/logos/warner.png" alt="warner" />
+                    <img className="companies" src="../../../images/logos/warner.png" alt="warner" />
                 </div>
             </div>
             <div className="photo"></div>

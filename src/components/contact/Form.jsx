@@ -42,7 +42,7 @@ export const Form = () => {
     return (
         <FormStyled>
             <div className="formParts halfContact">
-                <img className="contactImage" src='../../../assets/images/contact.jpeg' />
+                <img className="contactImage" src='../../../images/contact.jpeg' />
             </div>
             <div className="formParts formContainer">
                 <h1 className="title">CONTACTO</h1>

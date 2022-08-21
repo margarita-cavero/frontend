@@ -33,7 +33,7 @@ export const MujerJoven = () => {
     return (
         <div className="audioPlayer">
             <audio
-                src="../../assets/audios/mujer-joven.mp3"
+                src="../../audios/mujer-joven.mp3"
                 ref={audioPlayer}
                 onTimeUpdate={onPlaying}
             >

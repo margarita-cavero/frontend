@@ -33,7 +33,7 @@ export const BookAudio = () => {
     return (
         <div className="audioPlayer">
             <audio
-                src="../../assets/audios/audiolibro.mp3"
+                src="../../audios/audiolibro.mp3"
                 ref={audioPlayer}
                 onTimeUpdate={onPlaying}
             >

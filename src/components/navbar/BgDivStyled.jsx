@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BgDiv = styled.div`
     position: fixed;
-    background-image: url('https://github.com/margarita-cavero/frontend/blob/main/assets/images/madera-rotada.jpg');
+    background-image: url('../../images/madera-rotada.jpg');
     background-position: center;
     top:-1000px;
     left: -1000px;

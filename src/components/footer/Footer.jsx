@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="infoFooter">
         <Links />
         <div className="footer center">
-          <img className="micro" src='../../../assets/images/micro.png' alt='microfono' />
+          <img className="micro" src='../../../images/micro.png' alt='microfono' />
         </div>
         <Social />
       </div>

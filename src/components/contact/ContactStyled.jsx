@@ -5,7 +5,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-background-image: url('../../../assets/images/contactWallpaper.webp');
+background-image: url('../../../images/contactWallpaper.webp');
 background-attachment: fixed;
 background-position: top;
 background-size: cover;

@@ -11,7 +11,7 @@ export const OpenImage = () => {
     return (
         <OpenImageStyled>
             <div className="riendoContainer">
-                <img className="riendo" src="../../assets/images/margaritaCavero2.webp" alt="Actriz de doblaje riendo" />
+                <img className="riendo" src="../../images/margaritaCavero2.webp" alt="Actriz de doblaje riendo" />
                 <div className="divs sticky"></div>
             </div>
         </OpenImageStyled>

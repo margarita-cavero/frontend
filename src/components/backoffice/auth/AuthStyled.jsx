@@ -4,7 +4,7 @@ export const AuthStyled = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-background-image: url('../../../assets/images/admin/tools.jpeg');
+background-image: url('../../../images/admin/tools.jpeg');
 background-size: cover;
 background-attachment: fixed;
 padding-top: 5%;

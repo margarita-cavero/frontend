@@ -88,13 +88,13 @@ padding: 3rem;
         filter: drop-shadow(0 0 0px #0000);
     }
     .play{
-        background-image: url('../../assets/images/audio-player/play.png');
+        background-image: url('../../images/audio-player/play.png');
     }
     .pause{
-        background-image: url('../../assets/images/audio-player/pausa.png');
+        background-image: url('../../images/audio-player/pausa.png');
     }
     .stop{
-        background-image: url('../../assets/images/audio-player/stop.png');
+        background-image: url('../../images/audio-player/stop.png');
     }
     .time{
         background-color: #000;
